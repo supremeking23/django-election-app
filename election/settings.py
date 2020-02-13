@@ -25,7 +25,7 @@ SECRET_KEY = 'lmd!3iyhz0b^k^kl6cfa=x9l2ip#reh*62jnm*(znac3r9npg5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.112']
 
 
 # Application definition
@@ -77,11 +77,10 @@ WSGI_APPLICATION = 'election.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'election',
+        'NAME': 'postgres',
         'USER' : 'postgres',
-        'PASSWORD': 'ivan',
         'PORT' : '5432',
-        'HOST' : 'localhost',
+        'HOST' : 'db',
     }
 }
 
